@@ -156,7 +156,7 @@ function set_init_script() {
   sudo cp $INIT_SCRIPT /etc/init.d/;
   sudo chmod +x /etc/init.d/$INIT_SCRIPT;
   sudo update-rc.d $INIT_SCRIPT defaults;
-  rm -f $INIT_SCRIPT
+  sudo rm -f $INIT_SCRIPT
 }
 
 # Stop any running server
